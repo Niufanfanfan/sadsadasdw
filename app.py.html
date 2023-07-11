@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>app.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #cc7832;}
+.s2 { color: #6a8759;}
+.s3 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+app.py</font>
+</center></td></tr></table>
+<pre>
+<span class="s1">from </span><span class="s0">flask </span><span class="s1">import </span><span class="s0">Flask</span><span class="s1">,</span><span class="s0">render_template</span>
+
+<span class="s0">app = Flask(__name__)</span>
+
+
+<span class="s0">@app.route(</span><span class="s2">'/about.html'</span><span class="s0">)</span>
+<span class="s1">def </span><span class="s0">about():  </span><span class="s3"># put application's code here</span>
+    <span class="s1">return </span><span class="s0">render_template(</span><span class="s2">'about.html'</span><span class="s0">)</span>
+
+<span class="s0">@app.route(</span><span class="s2">'/index.html'</span><span class="s0">)</span>
+<span class="s1">def </span><span class="s0">index1():  </span><span class="s3"># put application's code here</span>
+    <span class="s1">return </span><span class="s0">render_template(</span><span class="s2">'index.html'</span><span class="s0">)</span>
+
+<span class="s0">@app.route (</span><span class="s2">'/index'</span><span class="s0">)</span>
+<span class="s1">def </span><span class="s0">index():  </span><span class="s3"># put application's code here</span>
+    <span class="s1">return </span><span class="s0">render_template(</span><span class="s2">'index.html'</span><span class="s0">)</span>
+
+<span class="s0">@app.route(</span><span class="s2">'/blog.html'</span><span class="s0">)</span>
+<span class="s1">def </span><span class="s0">blog():  </span><span class="s3"># put application's code here</span>
+    <span class="s1">return </span><span class="s0">render_template(</span><span class="s2">'blog.html'</span><span class="s0">)</span>
+
+<span class="s0">@app.route(</span><span class="s2">'/services.html'</span><span class="s0">)</span>
+<span class="s1">def </span><span class="s0">services():  </span><span class="s3"># put application's code here</span>
+    <span class="s1">return </span><span class="s0">render_template(</span><span class="s2">'services.html'</span><span class="s0">)</span>
+
+<span class="s0">@app.route(</span><span class="s2">'/blogsingle.html'</span><span class="s0">)</span>
+<span class="s1">def </span><span class="s0">blogsingle():  </span><span class="s3"># put application's code here</span>
+    <span class="s1">return </span><span class="s0">render_template(</span><span class="s2">'blogsingle.html'</span><span class="s0">)</span>
+
+<span class="s1">if </span><span class="s0">__name__ == </span><span class="s2">'__main__'</span><span class="s0">:</span>
+    <span class="s0">app.run()</span>
+</pre>
+</body>
+</html>
